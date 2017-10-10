@@ -7,7 +7,7 @@ if(Meteor.isClient){
     },
     'selectedClass': function(){
       var playerId = this._id;
-      var selectedPlayer = Session.get('selectedPlayer')
+      var selectedPlayer = Session.get('selectedPlayer');
       if(playerId == selectedPlayer) {
         return "selected";
       }
